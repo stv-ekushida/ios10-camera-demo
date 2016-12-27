@@ -6,7 +6,8 @@
 | XCode | 8.2 |
 | iOS | 10.0〜 |
 
-#### Info.plistにNSCameraUsageDescriptionとNSPhotoLibraryUsageDescriptionを追加する
+1. AVFoundation.frameworkを追加する
+2. Info.plistにNSCameraUsageDescriptionとNSPhotoLibraryUsageDescriptionを追加する
 
 ```
     <key>NSCameraUsageDescription</key>
