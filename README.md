@@ -6,7 +6,7 @@
 | XCode | 8.2 |
 | iOS | 10.0〜 |
 
-info.plistに下記を追加する
+## Info.plistにNSCameraUsageDescriptionとNSPhotoLibraryUsageDescriptionを追加する
 
 ```
     <key>NSCameraUsageDescription</key>
