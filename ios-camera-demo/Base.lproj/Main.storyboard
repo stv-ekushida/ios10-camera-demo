@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_camera_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2q-Dp-rMz">
+                                <rect key="frame" x="16" y="621" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oXT-1e-wDQ"/>
+                                </constraints>
+                                <state key="normal" title="撮影"/>
+                                <connections>
+                                    <action selector="photoDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YHb-kg-1Fy"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0KM-Fh-bYi">
+                                <rect key="frame" x="16" y="28" width="343" height="585"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S2q-Dp-rMz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="J7m-DE-N8a"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S2q-Dp-rMz" secondAttribute="bottom" constant="16" id="P6d-JP-0xU"/>
+                            <constraint firstAttribute="trailing" secondItem="0KM-Fh-bYi" secondAttribute="trailing" constant="16" id="fBJ-Ui-QRm"/>
+                            <constraint firstItem="S2q-Dp-rMz" firstAttribute="top" secondItem="0KM-Fh-bYi" secondAttribute="bottom" constant="8" id="fMb-5h-5jH"/>
+                            <constraint firstItem="0KM-Fh-bYi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="l7E-W8-1gs"/>
+                            <constraint firstItem="0KM-Fh-bYi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="vye-ka-5hd"/>
+                            <constraint firstAttribute="trailing" secondItem="S2q-Dp-rMz" secondAttribute="trailing" constant="16" id="wHs-8f-UMN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="baseView" destination="0KM-Fh-bYi" id="RDE-E0-kkO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
